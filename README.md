@@ -228,8 +228,6 @@ poodle.eyeEnviously("Shack Burger", "$", 9.57)
 // ==> "Byron eyes your Shack Burger enviously, hoping you will drop some,
 // ==> not caring the least that it cost you $9.57."
 ```
-your Shack Burger enviously, hoping you will drop some, // ==> not caring the
-least that it cost you $9.57.
 
 <figure>
   <img src="https://curriculum-content.s3.amazonaws.com/jsdom-mod/jsdom-mod-intro-dom-and-just-enough-js/poodle2.jpg" alt="Picture of IG:@byron_poodle_darling, who would like a snack" width="640" height="480">
