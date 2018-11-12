@@ -24,7 +24,7 @@ page
 6. Explain that JavaScript can compare things 
 7. Explain that JavaScript has `collections` 
 8. Explain that JavaScript is object-oriented 
-9. Explain that JavaScript is has `loops` 
+9. Explain that JavaScript has `loops` 
 10. Explain that JavaScript `logs` with `console.log`
 
 ## Explain the JavaScript / DOM Relationship
@@ -241,7 +241,7 @@ using the property of `name` to supply `Byron`.
 
 **A very important object when working with the DOM is called `document`.**
 
-## Explain That JavaScript Is Has Loops
+## Explain That JavaScript Has Loops
 
 Sometimes you don't want to manually type something out multiple times, but you
 want to perform some action "for each" element in a collection. That's where
