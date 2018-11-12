@@ -300,5 +300,5 @@ something like.... Professional developers try to make their code's function as
 
 Guesses and imagination are a vital part of your toolkit!
 
-[sight]: https://en.wikipedia.org/wiki/Sight_word [ref]:
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference 
+[sight]: https://en.wikipedia.org/wiki/Sight_word
+[ref]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference 
