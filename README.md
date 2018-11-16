@@ -301,4 +301,7 @@ something like.... Professional developers try to make their code's function as
 Guesses and imagination are a vital part of your toolkit!
 
 [sight]: https://en.wikipedia.org/wiki/Sight_word
-[ref]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference 
+[ref]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/fewpjs-introducing-the-dom-and-just-enough-javascript'>Introducing the DOM and Just Enough JavaScript</a> on Learn.co and start learning to code for free.</p>
+
