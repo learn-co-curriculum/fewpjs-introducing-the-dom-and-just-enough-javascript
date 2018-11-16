@@ -27,7 +27,7 @@ page
 9. Explain that JavaScript has `loops` 
 10. Explain that JavaScript `logs` with `console.log`
 
-## Explain the JavaScript / DOM Relationship
+### Explain the JavaScript / DOM Relationship
 
 JavaScript changes are made through a middle layer called the DOM, the
 Document Object Model. The DOM only knows how to be spoken to in JavaScript.
@@ -42,7 +42,7 @@ To get around this problem we start by learning some basic structures of
 JavaScript called "sight words." We're going to learn "just enough JavaScript"
 so that we can start working with the DOM &mdash; the best way to understand it.
 
-## Explain "Sight Words"
+### Explain "Sight Words"
 
 When you learned to read, before you understood the process of joining letters
 into sounds and sounds into words, you had a limited, but powerful vocabulary.
@@ -54,7 +54,7 @@ This lesson will provide you the "sight words" of JavaScript.  Some of these
 lines of code you might not fully understand at first and that's OK. We'll
 cover them all later in more depth.
 
-## Explain "Just Enough JavaScript" Concept
+### Explain "Just Enough JavaScript" Concept
 
 We call the approach of learning JavaScript sight words "just enough
 JavaScript." We learn so much better by working with technology than by merely
@@ -70,7 +70,7 @@ all OK in the "just enough" approach. In the following sections we list several
 "sight words" of JavaScript. If you want to know more about a sight word, feel
 free to consult [MDN's JavaScript Reference][ref].
 
-## Explain that JavaScript Has Things
+### Explain that JavaScript Has Things
 
 It might sound a bit weird to say, but there are "Things" in JavaScript. Most
 programming languages call these "types." For the moment we're going to call
@@ -86,7 +86,7 @@ text "if you can keep your head when all about you are losing theirs..." `if`,
 in this case is a _reserved word_ &mdash; something special to JavaScript. The
 String is, well, just some text.
 
-## Explain that JavaScript Has Variables
+### Explain that JavaScript Has Variables
 
 Sometimes you want to hold a `String` or a `Number` under another name.
 
@@ -123,7 +123,7 @@ When JavaScript first came out it had only `var`. Now it has `let` and `const`
 too. We'll cover the differences between these later. They all tell JavaScript,
 "Hey this is a name that I'm going to associate with some bit of information."
 
-## Explain that JavaScript Can Compare Things
+### Explain that JavaScript Can Compare Things
 
 ```javascript
 1 < 3  //=> true
@@ -144,7 +144,7 @@ pi //=> 3.14
 pi == 3.14 //=> true
 ```
 
-## Explain that JavaScript Has Collections
+### Explain that JavaScript Has Collections
 
 Sometimes a `variable` might point to a Thing which actually has multiple Things
 inside of it. In programming vocabulary, these collection Things are called
@@ -166,7 +166,7 @@ collection's name and putting a number inside of the `[]`. In the example we get
 the `String` names of some wizards stored in a collection of wizards identified
 by the name `slytherins`.
 
-## Explain that JavaScript is Object-Oriented
+### Explain that JavaScript is Object-Oriented
 
 When working with the DOM in JavaScript, many of the Things are you meet are
 objects. `Objects` are bits of code you can talk to that know state and
@@ -183,14 +183,14 @@ The thing that holds a bit of state is known as a property. This all sounds a
 bit confusing, but it's a bit more simple than it sounds. To ask, say, an
 adorable poodle its `name` state, you would do it like so:
 
-``` javascript
+```javascript
 poodle.name //=> "Byron"
 ```
 
 If you ask an object for a property it doesn't have, JavaScript says
 `undefined`
 
-``` javascript
+```javascript
 poodle.favoritePainter //=> undefined
 ```
 
@@ -241,7 +241,7 @@ using the property of `name` to supply `Byron`.
 
 **A very important object when working with the DOM is called `document`.**
 
-## Explain That JavaScript Has Loops
+### Explain That JavaScript Has Loops
 
 Sometimes you don't want to manually type something out multiple times, but you
 want to perform some action "for each" element in a collection. That's where
@@ -266,7 +266,7 @@ The important thing to take away is the ability to "sight read" that `for`
 invokes the idea of doing some repeating action for each element in a
 collection.
 
-## Explain That JavaScript Logs With `console.log`
+### Explain That JavaScript Logs With `console.log`
 
 In the examples that follow, and in much of the technical documentation of
 JavaScript, you will see the following `method` used: `console.log()`. This
@@ -289,9 +289,9 @@ JavaScript to "talk to our screen."
 
 ## Conclusion
 
-In this lesson you've learned the "sight words" of basic JavaScript. You should
-be able to reason about what code is doing when it works with the DOM in the
-subsequent lessons.
+In this lesson you've learned the "sight words" of basic JavaScript. With those,
+you can reason about what code is doing when it works with the DOM in future
+lessons.
 
 Don't forget the power of imagination! By looking at these bits of code, you can
 imagine that the code, written by humans just like you probably does
@@ -304,4 +304,3 @@ Guesses and imagination are a vital part of your toolkit!
 [ref]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/fewpjs-introducing-the-dom-and-just-enough-javascript'>Introducing the DOM and Just Enough JavaScript</a> on Learn.co and start learning to code for free.</p>
-
