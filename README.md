@@ -166,19 +166,31 @@ poolTable + ' with a capital T';
 ```
 
 Dynamically combining `string`s and variables is very common in JavaScript, so
-much so that a second method exists for combining `string`s, using what are
-known as [Template Literals][literals]:
+much so that multiple methods exist for combining `string`s. Another method
+is to use `concat`:
 
 ```javascript
-let letter = 'P'`And that rhymes with ${letter}`;
+'And that rhymes with '.concat('P');
 //=> 'And that rhymes with P'
+
+let lyric = 'And that stands for ';
+let trouble = 'pool!';
+lyric.concat(trouble);
+//=> 'And that stands for pool!'
 ```
 
-This works the same way as `"And that rhymes with " + letter`. To use template
-literals in your `string`s, you _must_ wrap the `string` in _backticks_, not
-quotes. Instead of using `+`, a variable is then wrapped in brackets preceded
-by a dollar sign: `${}`. Within these brackets, you can include variables or
-any other Things that can be converted into a `string`.
+You can also use what are known as [Template Literals][literals]:
+
+```javascript
+let pool = 'trouble'`Ya got ${pool}, ${pool}, ${pool}, ${pool}, ${pool}...`;
+('Ya got trouble, trouble, trouble, trouble, trouble...');
+```
+
+To use Template Literals in your `string`s, you _must_ wrap the entire `string`
+in _backticks_, not quotation marks. Instead of using `+` to combine, a variable
+is wrapped in brackets preceded by a dollar sign, `${}`, then included _within_
+the backticks. Inside these brackets, you can include variables or any other
+Things that can be converted into a `string`.
 
 ```javascript
 `Adding two and two equals ${2 + 2}`;
