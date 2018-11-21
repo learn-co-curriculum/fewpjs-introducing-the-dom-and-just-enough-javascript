@@ -9,22 +9,22 @@ DOM programming is the foundation of front-end development.
 
 DOM programming is using JavaScript to:
 
-1. Ask the DOM to find or `select` an HTML element or elements in the rendered
-page
-2. Remove and/or insert an element(s) 
-3. Adjust a property of the selected element(s)
+1.  Ask the DOM to find or `select` an HTML element or elements in the rendered
+    page
+2.  Remove and/or insert an element(s)
+3.  Adjust a property of the selected element(s)
 
 ## Learning Goals
 
-1. Explain the JavaScript / DOM relationship 
-2. Explain "sight words" 
-3. Explain "just enough JavaScript" concept 
-4. Explain that JavaScript has things 
-5. Explain that JavaScript has `variables` 
-6. Explain that JavaScript can compare things 
-7. Explain that JavaScript has `collections` 
-8. Explain that JavaScript is object-oriented 
-9. Explain that JavaScript has `loops` 
+1.  Explain the JavaScript / DOM relationship
+2.  Explain "sight words"
+3.  Explain "just enough JavaScript" concept
+4.  Explain that JavaScript has things
+5.  Explain that JavaScript has `variables`
+6.  Explain that JavaScript can compare things
+7.  Explain that JavaScript has `collections`
+8.  Explain that JavaScript is object-oriented
+9.  Explain that JavaScript has `loops`
 10. Explain that JavaScript `logs` with `console.log`
 
 ### Explain the JavaScript / DOM Relationship
@@ -50,7 +50,7 @@ This vocabulary contained your "[sight words][sight]." These are also the words
 you tend to memorize before you go on a trip abroad: MEN, WOMEN, WATER, FOOD,
 HOSPITAL.
 
-This lesson will provide you the "sight words" of JavaScript.  Some of these
+This lesson will provide you the "sight words" of JavaScript. Some of these
 lines of code you might not fully understand at first and that's OK. We'll
 cover them all later in more depth.
 
@@ -79,7 +79,7 @@ them **Things**.
 One type of Thing is a `number` like `2` or `3.14`.
 
 Another type of Thing is an arrangement of characters, called a `string` like
-`"Byron"` or `'Please feed the dog'`. Strings are written inside of `"` **or** `'`.
+`"Byron"` or `'Please feed the dog'`. `String`s are written inside of `"` **or** `'`.
 Strings are quoted because `if` might mean something very special to
 JavaScript but it also might be the beginning of a bit of
 text "if you can keep your head when all about you are losing theirs..." `if`,
@@ -95,41 +95,103 @@ Sometimes you want to hold a `String` or a `Number` under another name.
 > you're asking JavaScript. Sometimes, too, you tell JavaScript a fact and it
 > will just return it to you.
 
-_Any time we give you a JavaScript example, feel free to try it out in the Chrome JavaScript console that is included in the DevTools yourself! To open the console, you can use the keyboard shortcut of command + shift + c, or go to View, then Developer, and Developer Tools. Make sure the Console tab is selected at the top. Copy the first part of the example - the part after the // is showing you what the return value will be, which you will see in the console!_
+_Any time we give you a JavaScript example, feel free to try it out in the
+Chrome JavaScript console that is included in the DevTools yourself! To open the
+console, you can use the keyboard shortcut of command + shift + c, or go to
+View, then Developer, and Developer Tools. Make sure the Console tab is selected
+at the top. Copy the first part of the example - the part after the // is
+showing you what the return value will be, which you will see in the console!_
 
 ```javascript
-3.14 //=> 3.14
-var pi = 3.14 //=> `undefined`
-pi //=> 3.14
+3.14; //=> 3.14
+var pi = 3.14; //=> `undefined`
+pi; //=> 3.14
 ```
 
 JavaScript also lets you say:
 
 ```javascript
-3.14 //=> 3.14
-let pi = 3.14 //=> `undefined`
-pi //=> 3.14
+3.14; //=> 3.14
+let pi = 3.14; //=> `undefined`
+pi; //=> 3.14
 ```
 
 or
 
 ```javascript
-3.14 //=> 3.14
-const pi = 3.14 //=> `undefined`
-pi //=> 3.14
+3.14; //=> 3.14
+const pi = 3.14; //=> `undefined`
+pi; //=> 3.14
 ```
 
 When JavaScript first came out it had only `var`. Now it has `let` and `const`
 too. We'll cover the differences between these later. They all tell JavaScript,
 "Hey this is a name that I'm going to associate with some bit of information."
 
+#### Explain that Mathematic Operations Can Be Performed on Numbers
+
+`Number`s can be added, subtracted, multiplied and divided, and the
+results of these operations can can be stored in variables:
+
+```javascript
+1 + 1; //=> 2
+let result = 1 + 1; //=> `undefined`
+result; //=> 2
+let pi = 3.14; //=> `undefined`
+let radius = 2; //=> `undefined`
+let circumference = pi * (radius * 2); //=> `undefined`
+circumference; //=> 12.56
+10 / 4; //=> 2.5
+```
+
+JavaScript also has a symbol for finding the remainder when one `Number` is
+divided by another:
+
+```javascript
+10 % 4; //=> 2
+13 % 5; //=> 3
+```
+
+#### Explain How Strings Can Be Manipulated
+
+Just as `number`s can be added together, it is possible to add `string`s
+together as well:
+
+```javascript
+'Ya got trouble, folks, right here in  ' + 'River City';
+//=> 'Ya got trouble, folks, right here in  River City'
+let poolTable = 'Trouble';
+poolTable + ' with a capital T';
+//=> 'Trouble with a capital T'
+```
+
+Dynamically combining `string`s and variables is very common in JavaScript, so
+much so that a second method exists for combining `string`s, using what are
+known as [Template Literals][literals]:
+
+```javascript
+let letter = 'P'`And that rhymes with ${letter}`;
+//=> 'And that rhymes with P'
+```
+
+This works the same way as `"And that rhymes with " + letter`. To use template
+literals in your `string`s, you _must_ wrap the `string` in _backticks_, not
+quotes. Instead of using `+`, a variable is then wrapped in brackets preceded
+by a dollar sign: `${}`. Within these brackets, you can include variables or
+any other Things that can be converted into a `string`.
+
+```javascript
+`Adding two and two equals ${2 + 2}`;
+//=> 'Adding two and two equals 4'
+```
+
 ### Explain that JavaScript Can Compare Things
 
 ```javascript
-1 < 3  //=> true
-3 == 3 //=> true
-3 != 4 //=> true
-5 > 2  //=> true
+1 < 3; //=> true
+3 == 3; //=> true
+3 != 4; //=> true
+5 > 2; //=> true
 ```
 
 Be careful here, `=` means "assign to," like we did with `var` just above. For
@@ -138,10 +200,60 @@ comparison we use `==` and `===`.
 We can build on our previous example:
 
 ```javascript
-3.14 //=> 3.14
-const pi = 3.14
-pi //=> 3.14
-pi == 3.14 //=> true
+3.14; //=> 3.14
+const pi = 3.14;
+pi; //=> 3.14
+pi == 3.14; //=> true
+```
+
+### Explain that JavaScript Has Conditionals
+
+With the ability to compare things, we are able to build logic into our
+code using `if` statements:
+
+```javascript
+let test = 1;
+test; //=> 1
+
+if (test < 2) {
+	// test is less than 2.
+	// this statement is true so the code within the brackets is executed
+	test = test + 1;
+}
+
+test; //=> 2
+
+if (test < 2) {
+	// test is NOT less than 2.
+	// this statement is false so the code within the brackets is ignored
+	test = test + 1;
+}
+
+test; //=> 2
+```
+
+The code inside an `if` statement's brackets will only be executed if the
+statement, in this case `test < 2`, is `true`.
+
+We can expand our `if` statement to do one thing or another using `else`:
+
+```javascript
+let test = 1;
+test; //=> 1
+
+if (test < 2) {
+	test = test + 1; // test is less than 2
+} else {
+	test = 0;
+}
+test; //=> 2
+
+if (test < 2) {
+	test = test + 1;
+} else {
+	test = 0; // test is NOT less than 2
+}
+test; //=> 0
 ```
 
 ### Explain that JavaScript Has Collections
@@ -151,9 +263,9 @@ inside of it. In programming vocabulary, these collection Things are called
 `arrays`. So technically, `Array` belongs with `String` and `Number`.
 
 ```javascript
-slytherins[0] //=> "Salazar Slytherin"
-slytherins[1] //=> "Bellatrix Black"
-slytherins[2] //=> "Draco Malfoy"
+slytherins[0]; //=> "Salazar Slytherin"
+slytherins[1]; //=> "Bellatrix Black"
+slytherins[2]; //=> "Draco Malfoy"
 ```
 
 In JavaScript, `arrays` start at `0`. In America, the floor where you walk in is
@@ -184,28 +296,28 @@ bit confusing, but it's a bit more simple than it sounds. To ask, say, an
 adorable poodle its `name` state, you would do it like so:
 
 ```javascript
-poodle.name //=> "Byron"
+poodle.name; //=> "Byron"
 ```
 
 If you ask an object for a property it doesn't have, JavaScript says
 `undefined`
 
 ```javascript
-poodle.favoritePainter //=> undefined
+poodle.favoritePainter; //=> undefined
 ```
 
-When asking an object to do something (a behavior),  you use a `.` and a
+When asking an object to do something (a behavior), you use a `.` and a
 behavior-name (usually a verb) followed by `()`. Behaviors on objects are
 called `methods`.
 
 ```javascript
-poodle.bark() //=> An ear-splitting bark is heard
+poodle.bark(); //=> An ear-splitting bark is heard
 ```
 
 `Objects'` `methods` have access to all of that `object's` properties.
 
 ```javascript
-poodle.introduceYourselfFormally() //=> "Hello, my name is Byron the poodle"
+poodle.introduceYourselfFormally(); //=> "Hello, my name is Byron the poodle"
 ```
 
 In this case the `method` `introduceYourselfFormally` presumably looks at
@@ -217,14 +329,14 @@ Finally, `methods` can take arguments. Arguments change the `method's`
 operation.
 
 ```javascript
-poodle.eat(1) //=> "Byron eats 1 can of food"
-poodle.eat(2) //=> "Byron eats 2 cans of food"
+poodle.eat(1); //=> "Byron eats 1 can of food"
+poodle.eat(2); //=> "Byron eats 2 cans of food"
 ```
 
 `Methods` can take multiple arguments.
 
 ```javascript
-poodle.eyeEnviously("Shack Burger", "$", 9.57)
+poodle.eyeEnviously('Shack Burger', '$', 9.57);
 // ==> "Byron eyes your Shack Burger enviously, hoping you will drop some,
 // ==> not caring the least that it cost you $9.57."
 ```
@@ -258,7 +370,7 @@ witch who is passed in as an argument:
 
 ```javascript
 for (let i = 0; i < slytherins.count; i = i + 1) {
-  harry_potter.expelliarmus(slytherins[i]);
+	harry_potter.expelliarmus(slytherins[i]);
 }
 ```
 
@@ -278,9 +390,9 @@ defending against:
 
 ```javascript
 for (let i = 0; i < slytherins.count; i = i + 1) {
-  console.log(`Harry is about to disarm ${slytherins[i]}`);
-  harry_potter.expelliarmus(slytherins[i]);
-  console.log(`${slytherins[i]} is defenseless!`);
+	console.log(`Harry is about to disarm ${slytherins[i]}`);
+	harry_potter.expelliarmus(slytherins[i]);
+	console.log(`${slytherins[i]} is defenseless!`);
 }
 ```
 
@@ -302,5 +414,6 @@ Guesses and imagination are a vital part of your toolkit!
 
 [sight]: https://en.wikipedia.org/wiki/Sight_word
 [ref]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
+[literals]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/fewpjs-introducing-the-dom-and-just-enough-javascript'>Introducing the DOM and Just Enough JavaScript</a> on Learn.co and start learning to code for free.</p>
