@@ -339,17 +339,17 @@ let test = 1;
 test; //=> 1
 
 if (test < 2) {
-	// test is less than 2.
-	// this statement is true so the code within the brackets is executed
-	test = test + 1;
+  // test is less than 2.
+  // this statement is true so the code within the brackets is executed
+  test = test + 1;
 }
 
 test; //=> 2
 
 if (test < 2) {
-	// test is NOT less than 2.
-	// this statement is false so the code within the brackets is ignored
-	test = test + 1;
+  // test is NOT less than 2.
+  // this statement is false so the code within the brackets is ignored
+  test = test + 1;
 }
 
 test; //=> 2
@@ -365,16 +365,16 @@ let test = 1;
 test; //=> 1
 
 if (test < 2) {
-	test = test + 1; // test is less than 2
+  test = test + 1; // test is less than 2
 } else {
-	test = 0;
+  test = 0;
 }
 test; //=> 2
 
 if (test < 2) {
-	test = test + 1;
+  test = test + 1;
 } else {
-	test = 0; // test is NOT less than 2
+  test = 0; // test is NOT less than 2
 }
 test; //=> 0
 ```
@@ -493,7 +493,7 @@ witch who is passed in as an argument:
 
 ```javascript
 for (let i = 0; i < slytherins.count; i = i + 1) {
-	harry_potter.expelliarmus(slytherins[i]);
+  harry_potter.expelliarmus(slytherins[i]);
 }
 ```
 
@@ -513,9 +513,9 @@ defending against:
 
 ```javascript
 for (let i = 0; i < slytherins.count; i = i + 1) {
-	console.log(`Harry is about to disarm ${slytherins[i]}`);
-	harry_potter.expelliarmus(slytherins[i]);
-	console.log(`${slytherins[i]} is defenseless!`);
+  console.log(`Harry is about to disarm ${slytherins[i]}`);
+  harry_potter.expelliarmus(slytherins[i]);
+  console.log(`${slytherins[i]} is defenseless!`);
 }
 ```
 
