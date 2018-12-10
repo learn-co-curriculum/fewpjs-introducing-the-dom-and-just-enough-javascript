@@ -19,13 +19,14 @@ DOM programming is using JavaScript to:
 1.  Explain the JavaScript / DOM relationship
 2.  Explain "sight words"
 3.  Explain "just enough JavaScript" concept
-4.  Explain that JavaScript has things
-5.  Explain that JavaScript has `variables`
-6.  Explain that JavaScript can compare things
-7.  Explain that JavaScript has `collections`
-8.  Explain that JavaScript is object-oriented
-9.  Explain that JavaScript has `loops`
-10. Explain that JavaScript `logs` with `console.log`
+4.  Write experimental code in Chrome DevTools
+5.  Explain that JavaScript has things
+6.  Explain that JavaScript has `variables`
+7.  Explain that JavaScript can compare things
+8.  Explain that JavaScript has `collections`
+9.  Explain that JavaScript is object-oriented
+10.  Explain that JavaScript has `loops`
+11. Explain that JavaScript `logs` with `console.log`
 
 ### Explain the JavaScript / DOM Relationship
 
@@ -90,6 +91,95 @@ But we _don't_ do that here. We want you to work with that `Array` – see what 
 see what you _wish_ it would do, see what it can help you do and _then_ cover the theory. If
 you've learned programming languages elsewhere, this might feel a bit funny at first. Try
 out this approach!
+
+### Write Experimental Code in Chrome DevTools
+
+It's impossible to overstate how important practice is when you're learning a
+new programming language. You can read the READMEs and watch the videos, but the
+true education is in writing code — _lots_ of it.
+
+As you move through the JavaScript curriculum, you should almost always have a
+browser console open, either on the lesson page or in a separate window. Code
+along with every example. Get used to the syntax and familiarize yourself with
+the errors that arise when you mistype something. Clear the console or simply
+refresh the page whenever you need a clean slate. Code, code, **code**,
+**code**, ***code***.
+
+Every major browser comes with a built-in set of developer tools that you can
+use to inspect, modify, and debug the content of a web page.
+
+***NOTE:*** To ensure that instructions and screenshots match up with your
+experience, use [Google Chrome](https://www.google.com/chrome/index.html) browser.
+
+To [open the dev tools in Chrome](https://developers.google.com/web/tools/chrome-devtools/console/#open_as_panel
+), press `Ctrl+Shift+J` (Windows / Linux) or `Cmd+Opt+J` (Mac). Chrome ships with a whole suite of useful dev tools, but the only one we care about for now is the JavaScript console.
+
+The console is an environment in the browser where we can type and run arbitrary
+JavaScript code in the context of the current browser window. The console is
+_sandboxed_, meaning the only resources it has access to are those loaded on the
+current page. Once we start declaring variables and functions in separate
+JavaScript files, we'll be able to access and play around with them in the
+console. The console is the single best tool for debugging JavaScript in the
+browser, so start familiarizing yourself with it now.
+
+The `Ctrl+Shift+J` / `Cmd+Opt+J` command should open up straight into the
+console. If, for whatever reason, it doesn't, you can always click on `Console`
+in the dropdown (when the dev tools are collapsed) or in the list of tabs:
+
+<picture>
+  <source srcset="https://curriculum-content.s3.amazonaws.com/web-development/js/basics/intro-to-javascript/opening_the_console.webp" type="image/webp">
+  <source srcset="https://curriculum-content.s3.amazonaws.com/web-development/js/basics/intro-to-javascript/opening_the_console.gif" type="image/gif">
+  <img src="https://curriculum-content.s3.amazonaws.com/web-development/js/basics/intro-to-javascript/opening_the_console.gif" alt="Opening the console">
+</picture>
+
+To access the Chrome dev tools settings — for example, to change the theme from
+light to dark — click the three vertical dots:
+
+<picture>
+  <source srcset="https://curriculum-content.s3.amazonaws.com/web-development/js/basics/intro-to-javascript/changing_the_theme.webp" type="image/webp">
+  <source srcset="https://curriculum-content.s3.amazonaws.com/web-development/js/basics/intro-to-javascript/changing_the_theme.gif" type="image/gif">
+  <img src="https://curriculum-content.s3.amazonaws.com/web-development/js/basics/intro-to-javascript/changing_the_theme.gif" alt="Changing the theme">
+</picture>
+
+If at any point the console becomes cluttered with errors, warnings, or anything
+else, click the `Clear console` button:
+
+<picture>
+  <source srcset="https://curriculum-content.s3.amazonaws.com/web-development/js/basics/intro-to-javascript/clearing_the_console.webp" type="image/webp">
+  <source srcset="https://curriculum-content.s3.amazonaws.com/web-development/js/basics/intro-to-javascript/clearing_the_console.gif" type="image/gif">
+  <img src="https://curriculum-content.s3.amazonaws.com/web-development/js/basics/intro-to-javascript/clearing_the_console.gif" alt="Clearing the console">
+</picture>
+
+Okay, okay, enough background and setup. Let's write some code!
+
+### Coding
+
+We'll start off with some simple math. In the console, type `1 + 1` and press
+enter. You should see the number `2` appear.
+
+<picture>
+  <source srcset="https://curriculum-content.s3.amazonaws.com/web-development/js/basics/intro-to-javascript/math_in_console.webp" type="image/webp">
+  <source srcset="https://curriculum-content.s3.amazonaws.com/web-development/js/basics/intro-to-javascript/math_in_console.gif" type="image/gif">
+  <img src="https://curriculum-content.s3.amazonaws.com/web-development/js/basics/intro-to-javascript/math_in_console.gif" alt="Math in the console">
+</picture>
+
+You just wrote and ran your first line of JavaScript code!
+
+The code you wrote, `1 + 1` is an _expression_. In JavaScript, an expression is **[a valid unit of code that returns a value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Expressions)**. The value that it returned, `2`, is aptly referred to as the **return value** of the expression. Try out some more mathematical expressions and see what they return!
+
+Next up, let's write some text. To make sure the JavaScript engine knows that we're trying to write some literal text, we need to wrap it in quotation marks, like so:
+
+```js
+"This is some literal text in JavaScript!"
+```
+
+Go ahead and type that classic phrase, `"Hello, world!"`, into the console and
+press enter. It returned `"Hello, world!"` right back to us. Try typing some
+more literal text into the console, such as your name. Don't forget the
+quotation marks!
+
+<img src="https://curriculum-content.s3.amazonaws.com/web-development/js/basics/intro-to-javascript/text_in_console_300.gif" alt="Text in the console">
+
 
 ### Explain that JavaScript Has Things
 
