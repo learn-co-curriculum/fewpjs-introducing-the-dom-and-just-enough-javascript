@@ -74,21 +74,25 @@ free to consult [MDN's JavaScript Reference][ref].
 ### "But Wait, Where's the (Boring) Basics Chapter on Data Types and Stuff Like That?"
 
 You might have looked at other programming languages' courses that start with 
-(boring) introductory, silly examples to teach you basics of the language but don't
+(boring) introductory, contrived examples to teach you basics of the language but don't
 _show_ you them doing anything useful.
 
-We _could_ tell you, for example: "An Array is a data structure that holds a series
-of continuous data elements which can be accessed via an index, an integer which starts
-at 0. Here's an example: `arrayOfDogs = ["Byron", "Boo", "Luna"];`" We'd then go on to
-list all sorts of things you need to know about `Array`s. How to get their length, how
+We _could_ tell you, for example:
+
+> An `Array` is a data structure that holds a series of memory-contiguous data elements which can be accessed via an index, an integer, which starts at `0`. Here's an example: `arrayOfDogs = ["Byron", "Boo", "Luna"];` `"Boo"` is at index `1` and we can retrieve that value with `arrayOfDogs[1]`"
+
+We'd then go on to list all sorts of things you need to know about `Array`s. How to get their length, how
 to iterate over their members, etc.
 
 Then, sometime later, we'd then expect you to understand that when we say
 "`document.querySelectorAll()` returns an `Array` of DOM nodes" that you should "re-load"
 and re-apply all those previously seen lessons onto the results of this method call.
 
-But we _don't_ do that here. We want you to work with that `Array` – see what it's good for,
-see what you _wish_ it would do, see what it can help you do and _then_ cover the theory. If
+But we _don't_ do that here. That's not the way human brains work.
+
+We want you to work with an `Array` &mdash; not a contrived example with a list of Flatiron
+team's dogs' names. We want you to see _for youself_ what it's good for in the envionment you'll
+most often need it in. You'll see what it can help you do _first_ and _then_ cover the theory. If
 you've learned programming languages elsewhere, this might feel a bit funny at first. Try
 out this approach!
 
