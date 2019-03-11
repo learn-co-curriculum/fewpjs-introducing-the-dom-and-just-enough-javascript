@@ -297,8 +297,10 @@ lyric.concat(trouble);
 You can also use what are known as [Template Literals][literals]:
 
 ```javascript
-let pool = 'trouble'`Ya got ${pool}, ${pool}, ${pool}, ${pool}, ${pool}...`;
-('Ya got trouble, trouble, trouble, trouble, trouble...');
+let pool = 'trouble';
+//=> undefined
+`Ya got ${pool}, ${pool}, ${pool}, ${pool}, ${pool}...`;
+//=> 'Ya got trouble, trouble, trouble, trouble, trouble...'
 ```
 
 To use Template Literals in your `string`s, you _must_ wrap the entire `string`
