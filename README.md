@@ -409,7 +409,7 @@ by the name `slytherins`.
 
 ### Explain that JavaScript is Object-Oriented
 
-When working with the DOM in JavaScript, many of the Things are you meet are
+When working with the DOM in JavaScript, many of the Things you encounter are
 objects. `Objects` are bits of code you can talk to that know state and
 behavior. `Objects` should round out our universe of JavaScript Things along
 with `arrays`, `strings`, and `numbers`.
