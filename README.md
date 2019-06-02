@@ -91,7 +91,7 @@ and re-apply all those previously seen lessons onto the results of this method c
 But we _don't_ do that here. That's not the way human brains work.
 
 We want you to work with an `Array` &mdash; not a contrived example with a list of Flatiron
-team's dogs' names. We want you to see _for youself_ what it's good for in the envionment you'll
+team's dogs' names. We want you to see _for youself_ what it's good for in the environment you'll
 most often need it in. You'll see what it can help you do _first_ and _then_ cover the theory. If
 you've learned programming languages elsewhere, this might feel a bit funny at first. Try
 out this approach!
