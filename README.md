@@ -388,8 +388,8 @@ test; //=> 0
 ### Explain that JavaScript Has Collections
 
 Sometimes a `variable` might point to a Thing which actually has multiple Things
-inside of it. In programming vocabulary, these collection Things are called
-`a`. So technically, `Array` belongs with `String` and `Number`.
+inside of it. In programming vocabulary, these collection-Things are called
+`Array`s. So technically, `Array` belongs with `String` and `Number`.
 
 ```javascript
 slytherins[0]; //=> "Salazar Slytherin"
