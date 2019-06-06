@@ -91,7 +91,7 @@ and re-apply all those previously seen lessons onto the results of this method c
 But we _don't_ do that here. That's not the way human brains work.
 
 We want you to work with an `Array` &mdash; not a contrived example with a list of Flatiron
-team's dogs' names. We want you to see _for youself_ what it's good for in the envionment you'll
+team's dogs' names. We want you to see _for yourself_ what it's good for in the environment you'll
 most often need it in. You'll see what it can help you do _first_ and _then_ cover the theory. If
 you've learned programming languages elsewhere, this might feel a bit funny at first. Try
 out this approach!
@@ -246,7 +246,7 @@ too. We'll cover the differences between these later. They all tell JavaScript,
 #### Explain that Mathematic Operations Can Be Performed on Numbers
 
 `Number`s can be added, subtracted, multiplied and divided, and the
-results of these operations can can be stored in variables:
+results of these operations can be stored in variables:
 
 ```javascript
 1 + 1; //=> 2
@@ -273,8 +273,8 @@ Just as `number`s can be added together, it is possible to add `string`s
 together as well:
 
 ```javascript
-'Ya got trouble, folks, right here in  ' + 'River City';
-//=> 'Ya got trouble, folks, right here in  River City'
+'Ya got trouble, folks, right here in ' + 'River City';
+//=> 'Ya got trouble, folks, right here in River City'
 let poolTable = 'Trouble';
 poolTable + ' with a capital T';
 //=> 'Trouble with a capital T'
@@ -389,7 +389,7 @@ test; //=> 0
 
 Sometimes a `variable` might point to a Thing which actually has multiple Things
 inside of it. In programming vocabulary, these collection Things are called
-`arrays`. So technically, `Array` belongs with `String` and `Number`.
+`a`. So technically, `Array` belongs with `String` and `Number`.
 
 ```javascript
 slytherins[0]; //=> "Salazar Slytherin"
@@ -400,7 +400,7 @@ slytherins[2]; //=> "Draco Malfoy"
 In JavaScript, `arrays` start at `0`. In America, the floor where you walk in is
 called the `1` floor (or first floor). In most of Europe and the rest of the
 world, the floor where you walk in is called something else. Arrays are like
-that, they start at `0`.
+that - they start at `0`.
 
 As seen above, we can get one of the elements of a collection by putting `[]` after a
 collection's name and putting a number inside of the `[]`. In the example we get
@@ -421,7 +421,7 @@ between the object-name and the state or behavior name, we call writing code
 this way "dot-notation."
 
 The thing that holds a bit of state is known as a property. This all sounds a
-bit confusing, but it's a bit more simple than it sounds. To ask, say, an
+bit confusing, but it's a bit simpler than it sounds. To ask, say, an
 adorable poodle its `name` state, you would do it like so:
 
 ```javascript
