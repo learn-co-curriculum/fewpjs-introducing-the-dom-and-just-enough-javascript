@@ -45,7 +45,7 @@ so that we can start working with the DOM &mdash; the best way to understand it.
 
 ### Explain "Sight Words"
 
-When you learned to read, before you understood the process of joining letters
+When you learned to read before you understood the process of joining letters
 into sounds and sounds into words, you had a limited, but powerful vocabulary.
 This vocabulary contained your "[sight words][sight]." These are also the words
 you tend to memorize before you go on a trip abroad: MEN, WOMEN, WATER, FOOD,
@@ -62,20 +62,20 @@ JavaScript." We learn so much better by working with technology than by merely
 reading words.
 
 We take this approach because it's just more fun, as well as being much more
-effective. It's fun to change text on pages or update styling. Also, some of the
-JavaScript concepts tend to sneak in along the way and make learning easier.
+effective. It's fun to change the text on pages or update the styling. Also,
+some of the JavaScript concepts tend to sneak in along the way and make
+learning easier.
 
 It's OK to come back here if you get confused or forget something. You might
 want to bookmark this page or keep it open in a tab as you move along. This is
-all OK in the "just enough" approach. In the following sections we list several
+all OK in the "just enough" approach. In the following sections, we list several
 "sight words" of JavaScript. If you want to know more about a sight word, feel
 free to consult [MDN's JavaScript Reference][ref].
 
 ### "But Wait, Where's the (Boring) Basics Chapter on Data Types and Stuff Like That?"
 
-You might have looked at other programming languages' courses that start with 
-(boring) introductory, contrived examples to teach you basics of the language but don't
-_show_ you them doing anything useful.
+You might have looked at other programming languages' courses that start with
+(boring) introductory, contrived examples to teach you basics of the language.
 
 We _could_ tell you, for example:
 
@@ -91,7 +91,7 @@ and re-apply all those previously seen lessons onto the results of this method c
 But we _don't_ do that here. That's not the way human brains work.
 
 We want you to work with an `Array` &mdash; not a contrived example with a list of Flatiron
-team's dogs' names. We want you to see _for youself_ what it's good for in the envionment you'll
+team's dogs' names. We want you to see _for yourself_ what it's good for in the environment you'll
 most often need it in. You'll see what it can help you do _first_ and _then_ cover the theory. If
 you've learned programming languages elsewhere, this might feel a bit funny at first. Try
 out this approach!
@@ -127,7 +127,7 @@ console. The console is the single best tool for debugging JavaScript in the
 browser, so start familiarizing yourself with it now.
 
 The `Ctrl+Shift+J` / `Cmd+Opt+J` command should open up straight into the
-console. If, for whatever reason, it doesn't, you can always click on `Console`
+console. If for whatever reason, it doesn't, you can always click on `Console`
 in the dropdown (when the dev tools are collapsed) or in the list of tabs:
 
 <picture>
@@ -199,7 +199,7 @@ Strings are quoted because `if` might mean something very special to
 JavaScript but it also might be the beginning of a bit of
 text "if you can keep your head when all about you are losing theirs..." `if`,
 in this case is a _reserved word_ &mdash; something special to JavaScript. The
-String is, well, just some text.
+`String` is, well, just some text.
 
 ### Explain that JavaScript Has Variables
 
@@ -241,12 +241,12 @@ pi; //=> 3.14
 
 When JavaScript first came out it had only `var`. Now it has `let` and `const`
 too. We'll cover the differences between these later. They all tell JavaScript,
-"Hey this is a name that I'm going to associate with some bit of information."
+"Hey! This is a name that I'm going to associate with some bit of information."
 
 #### Explain that Mathematic Operations Can Be Performed on Numbers
 
 `Number`s can be added, subtracted, multiplied and divided, and the
-results of these operations can can be stored in variables:
+results of these operations can be stored in variables:
 
 ```javascript
 1 + 1; //=> 2
@@ -273,15 +273,15 @@ Just as `number`s can be added together, it is possible to add `string`s
 together as well:
 
 ```javascript
-'Ya got trouble, folks, right here in  ' + 'River City';
-//=> 'Ya got trouble, folks, right here in  River City'
+'Ya got trouble, folks, right here in ' + 'River City';
+//=> 'Ya got trouble, folks, right here in River City'
 let poolTable = 'Trouble';
 poolTable + ' with a capital T';
 //=> 'Trouble with a capital T'
 ```
 
 Dynamically combining `string`s and variables is very common in JavaScript, so
-much so that multiple methods exist for combining `string`s. Another method
+much so that multiple methods exist for combining `String`s. Another method
 is to use `concat`:
 
 ```javascript
@@ -388,8 +388,8 @@ test; //=> 0
 ### Explain that JavaScript Has Collections
 
 Sometimes a `variable` might point to a Thing which actually has multiple Things
-inside of it. In programming vocabulary, these collection Things are called
-`arrays`. So technically, `Array` belongs with `String` and `Number`.
+inside of it. In programming vocabulary, these collection-Things are called
+`Array`s. So technically, `Array` belongs with `String` and `Number`.
 
 ```javascript
 slytherins[0]; //=> "Salazar Slytherin"
@@ -400,10 +400,10 @@ slytherins[2]; //=> "Draco Malfoy"
 In JavaScript, `arrays` start at `0`. In America, the floor where you walk in is
 called the `1` floor (or first floor). In most of Europe and the rest of the
 world, the floor where you walk in is called something else. Arrays are like
-that, they start at `0`.
+that - they start at `0`.
 
 As seen above, we can get one of the elements of a collection by putting `[]` after a
-collection's name and putting a number inside of the `[]`. In the example we get
+collection's name and putting a number inside of the `[]`. In the example, we get
 the `String` names of some wizards stored in a collection of wizards identified
 by the name `slytherins`.
 
@@ -421,7 +421,7 @@ between the object-name and the state or behavior name, we call writing code
 this way "dot-notation."
 
 The thing that holds a bit of state is known as a property. This all sounds a
-bit confusing, but it's a bit more simple than it sounds. To ask, say, an
+bit confusing, but it's a bit simpler than it sounds. To ask, say, an
 adorable poodle its `name` state, you would do it like so:
 
 ```javascript
@@ -437,24 +437,24 @@ poodle.favoritePainter; //=> undefined
 
 When asking an object to do something (a behavior), you use a `.` and a
 behavior-name (usually a verb) followed by `()`. Behaviors on objects are
-called `methods`.
+called methods.
 
 ```javascript
 poodle.bark(); //=> An ear-splitting bark is heard
 ```
 
-`Objects'` `methods` have access to all of that `object's` properties.
+`Objects'` methods have access to all of that `object's` properties.
 
 ```javascript
 poodle.introduceYourselfFormally(); //=> "Hello, my name is Byron the poodle"
 ```
 
-In this case the `method` `introduceYourselfFormally` presumably looks at
+In this case, the method `introduceYourselfFormally` presumably looks at
 `poodle`'s `name` property and adds some text around it. We might imagine that
 it's making `"Hello, my name is " + this.name + " the poodle"`. As it turns out,
 that is entirely valid JavaScript and it is probably what's happening!
 
-Finally, `methods` can take arguments. Arguments change the `method's`
+Finally, methods can take arguments. Arguments change the method's
 operation.
 
 ```javascript
@@ -510,7 +510,7 @@ collection.
 ### Explain That JavaScript Logs With `console.log`
 
 In the examples that follow, and in much of the technical documentation of
-JavaScript, you will see the following `method` used: `console.log()`. This
+JavaScript, you will see the following method used: `console.log()`. This
 method is used to print something. Often it's used to print out a `variable` or
 some bit of data to make a point or to debug something.
 
@@ -525,14 +525,14 @@ for (let i = 0; i < slytherins.count; i = i + 1) {
 }
 ```
 
-We'll discuss this `method` in more detail later, but it's a way to get
+We'll discuss this method in more detail later, but it's a way to get
 JavaScript to "talk to our screen."
 
 ## Conclusion
 
-In this lesson you've learned the "sight words" of basic JavaScript. With those,
-you can reason about what code is doing when it works with the DOM in future
-lessons.
+In this lesson, you've learned the "sight words" of basic JavaScript. With
+those, you can reason about what code is doing when it works with the DOM in
+future lessons.
 
 Don't forget the power of imagination! By looking at these bits of code, you can
 imagine that the code, written by humans just like you probably does
