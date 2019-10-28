@@ -498,7 +498,7 @@ the `harry_potter` object to invoke its `expelliarmus` method on the wizard or
 witch who is passed in as an argument:
 
 ```javascript
-for (let i = 0; i < slytherins.count; i = i + 1) {
+for (let i = 0; i < slytherins.length; i = i + 1) {
   harry_potter.expelliarmus(slytherins[i]);
 }
 ```
@@ -518,7 +518,7 @@ Let's build on the loop example. Let's say we want to know who `harry_potter` is
 defending against:
 
 ```javascript
-for (let i = 0; i < slytherins.count; i = i + 1) {
+for (let i = 0; i < slytherins.length; i = i + 1) {
   console.log(`Harry is about to disarm ${slytherins[i]}`);
   harry_potter.expelliarmus(slytherins[i]);
   console.log(`${slytherins[i]} is defenseless!`);
