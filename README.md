@@ -476,6 +476,7 @@ poodle.eyeEnviously('Shack Burger', '$', 9.57);
 </figure>
 
 <br><br>
+
 Here we can imagine JavaScript doing some calculations to turn the `Number`
 `9.57` and `String` `$` into the new string `$9.57`. We can also imagine it
 using the property of `name` to supply `Byron`.
@@ -544,5 +545,3 @@ Guesses and imagination are a vital part of your toolkit!
 [sight]: https://en.wikipedia.org/wiki/Sight_word
 [ref]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
 [literals]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
-
-<p class='util--hide'>View <a href='https://learn.co/lessons/fewpjs-introducing-the-dom-and-just-enough-javascript'>Introducing the DOM and Just Enough JavaScript</a> on Learn.co and start learning to code for free.</p>
